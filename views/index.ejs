@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Google api</title>
+
+    <!-- <%= data.access_token %> -->
+</head>
+<body>
+   <div class="container h-screen">
+<div class=" h-screen	flex  p-8  justify-items-centerjustify-center">
+
+
+    <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="inline-block   py-2 sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table class="max-w-80 text-left text-sm font-light ">
+                <thead
+                  class="border-b bg-white font-medium dark:border-neutral-500 dark:bg-neutral-600">
+                  <tr>
+                    <th scope="col" class="px-6 py-4">access token</th>
+                    <th scope="col" class="px-6 py-4">refresh token</th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="border-b bg-neutral-100 dark:border-neutral-500 dark:bg-neutral-700">
+                    <td class="w-20 h-40  overflow-scroll	 px-6 py-4 font-medium"><%= data.access_token %></td>
+                    <td class="w-20 h-40 overflow-scroll	 px-6 py-4"><%= data.refresh_token %></td>
+    
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+</div>
+
+</body>
+</html>
